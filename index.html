@@ -5,57 +5,51 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Toolkit</title>
+        <title>Toolkit.html</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">    
     </head>
     <body>
         <header>
-            <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
+            <div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container">
                     <div class="navbar-header">
                         <a href="index.html" class="pull-left visible-xs visible-md visible-lg">
                             <div id="logo-img" alt="Logo image"></div>
                         </a>     
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#collapsable-nav" aria-expanded="false">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div id="collapsable-nav" class="collapse navbar-collapse navbar-fixed-top">
-                        <ul id="nav-list" class="nav-list navbar-nav navbar-right">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li id="about">
-                                About the Toolkit
-                                <ul class="nav-list">
-                                    <li><a href="index.html">Toolkit Description</a></li>
-                                    <li><a href="index.html">Toolkit Target Users</a></li>
-                                    <li><a href="index.html">Toolkit Methodology</a></li>
-                                </ul>
-                            </li>
-                            <li id="pilot">
-                                Pilot Project
-                                  <ul class="nav-list">
-                                    <li><a href="index.html">Introduction</a></li>
-                                    <li><a href="index.html">Business Outcomes</a></li>
-                                    <li><a href="index.html">Initiatives and Outputs</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index.html">Feedback</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">About the Toolkit <b class="caret"></b></a>
+                      <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Toolkit Description</a></li>
+                        <li><a href="#">Toolkit Target Users</a></li>
+                        <li><a href="#">Toolkit Methodology</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pilot Project <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">Business Outcomes</a></li>
+                        <li><a href="#">Initiatives and Outputs</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
                 </div>
-            </nav>
+                <!--/.nav-collapse -->
+              </div>
+            </div><!--/.main-menu  -->
         </header>
         
         <div class="jumbotron">
