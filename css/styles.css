@@ -110,42 +110,39 @@ p:nth-child(2) {
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours, #address {
+#sec2, #sec1 {
   line-height: 2;
 }
-#hours > span, #address > span {
+#sec2 > span, #sec1 > span {
   font-size: 1.3em;
 }
-#address p {
+#sec1 p {
   color: #d3d3d3;
   font-size: .8em;
   line-height: 1.8;
 }
-#hours li{
+#sec2 li{
   border-bottom: .5px #696969 solid;
   list-style: none;
   padding-bottom: 5px;
   color: #d3d3d3;
 }
-#testimonials li{
+#sec3 li, #sec4 li{
   border-bottom: .5px #696969 solid;
   list-style: none;
   padding-bottom: 5px;
 }
 
-#address li{
+#sec1 li{
   border-bottom: .5px #696969 solid;
   list-style: none;
   padding-bottom: 5px;
 }
-#testimonials span{
+#sec3 span, #sec4 span{
   font-size: small;
   margin-top: 20px;
 }
-#hours span{
-  font-size: small;
-}
-#address span{
+#sec1 span, #sec2 span{
   font-size: small;
 }
 
@@ -166,7 +163,7 @@ p:nth-child(2) {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
+    background: no-repeat;
     height: 432px;
   }
   
@@ -174,7 +171,7 @@ p:nth-child(2) {
 @media (min-width: 992px) and (max-width: 1199px) {
     /* Home Page */
   .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
+    background: no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -183,7 +180,7 @@ p:nth-child(2) {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    background: no-repeat;
     height: 675px;
   }
 }
